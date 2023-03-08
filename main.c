@@ -1,3 +1,4 @@
+//3/5, sum like that
 //this is called main.c
 
 #include <stdio.h>
