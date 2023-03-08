@@ -1,0 +1,18 @@
+# I gotta a Socket, shellcode, porting, and coding book so ima look through it 
+The book really goes over three programming Lingos:
+    Cpp
+    C
+    Java
+    C#, too
+
+#this will be fun
+#ngl java compiler be beating my ass
+To be honest instead of Java I might try go
+I think go could be a Security Lingo its like Py and C
+For a good lingo for Security:
+    Something that great at memory managment and,
+    array bound checking
+    buffer overflow attacks are almost impossible
+    Wont be able to do pointer attacks
+    Also something that keeps code in an enviorment
+

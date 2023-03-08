@@ -1,0 +1,48 @@
+#		The Programs dont work rn bc I gotta find/code something called "common.h"
+
+
+#just some lil note on OS
+"OS" is the buffer layer btw us and processor 
+I think you can actually make a os within and os and not break your computer:
+    its something like a virtual machine,
+    you give it virtual everything,
+    {TBC}
+
+"OS" is basically a security ring that makes sure
+also "OS" comes with hella system calls and interface APIs:
+    you can call on em#like change the UI to green on Windows terminal
+
+in C Spin() is a function the repeatly checks the time,
+and it return a flag(I think its a flag) once a second
+if you register the ouput run through diffrent cpus or run the right commmand,
+it will output what ever diffrent number input 
+import Ex()>
+    ./cpu A & ; ./cpu B & ; ./cpu & ;
+Exit()>
+
+#ok with this command its like haveing a stack on instruction the cpu is gonna process
+This how we make it into a vm with the os:
+     the instructions up top inna way breaks the cpu in parts,
+     that being said allocate the cpu the right way and you got a another,
+     computer in a computer,
+#hopefully I dont break Lizzy doing this, also this is called "Virtualizing the CPU" 
+So you need to interact with the "OS" so you need an "API"
+#its talk about throughout the book
+#also these APIs are the main way users interact with the "OS"
+
+#***********************This is some fun, we about to go over how "OS"run Multiple app***************************
+O.O.O(Order Of Operation(Hope yall like PEMDAS)):
+     Ok so something called the "Policy" of the "OS" is determine the order:
+	Now the "Resource Manager" should make a lil mo sense
+#i think this also apart of the OOO but idk
+Virtualizing Memory:
+    So bout to take a lil look at the "Physical Memory":
+	Memory really is just an array of bytes(16-bits = byte)
+	to read physical memory we have to address it#prolly a register
+	to write data in memory you also have to address, 
+	#look ya ASM textbook im about to. 
+	Memory is always being updated:
+	    simple example. Something has to keep the time
+
+
+
