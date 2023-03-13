@@ -1,0 +1,66 @@
+Os are pretty cool
+#oh this is gonna b over OS
+
+from what I read so. Os is what allows us to stop using binary
+CPUs come wit some pre-built programs:
+#On this part. There is on OS. Its just you and the Hardware :)
+    The main one we gon talk about is gonna bee "BIOS":
+	BIOS stands for "Basic Input/Output Software"
+	BIOS for the most part test the hardware. #dont expect loops to come from this
+	When a computer boots up the "BIOS" is what looks for the operatin system
+	This is why boot selector are important. Its where these pre-built programs and test are stored/executed
+	theres is no file system here. Actual physcial locations:
+	    Locations are stored more like this:
+		Cylinder 2, Head 3, Sector 5#this is straigt from the book
+	Cylinder0, Head 0, Sector 0:
+		this is usally where the boot selector is 
+		OS are usally stored here	
+#note to self be careful when writting this code it read all values as binary
+#again its just you and the CPU. ALSO YO X-86
+#it wouldn't hurt to learn HexaDecimal too
+'	The rule of thumb is The last 2 Bytes(1/4 bit) of a boot selctor is set to the number.
+	0xaa55:
+	    The BIOS loops thorugh(read) every storage device(USB, FLOPPY DISK, DRIVER, CD, HARD DISK... ETC)
+	    reads the boot selctorm into memory and intsucts the CPU the begin executig
+	    The first boot selctor it finds with that magic number
+#now you got control of the computer
+#note to self. Find ways to expliot peoples BIOS. If you can get in Boot Reader you own the computer
+
+#Ok now we stumbled into a lil secitons
+BIOS, BOOT BLOCKS, and the magic number
+#fuck to import raw bytes into or well binary into the  computer I have to get a machine code editor
+#*nother sidenote	
+
+    The intital thre bytes in Hexa, are usaly defined by the manufacuter(0xe9, 0xfd, 0xff(oh my fav, this shit is littered all around Microsoft))
+    usally for endless jmps
+    
+
+     the last two bytes are for well if you been paying attention you got an idea of what it is.
+     0x55, 0xaa.These are the magic number are what tell the BIOS(a very fancy program),
+     What isnt just data and what is the boot selctor
+
+     One way to find this file is bc it filled with 0's(* this omitts some 0's bc that shit too long)
+     this is a way to put the magic number in position at the last two bytes(If i get it right its just these two numbers)
+     At the end of the 512 byte disk selector
+
+	reson why its formatted in X-86 is bc it can handle multiple byte values.
+	its called "lil endian"
+	the less significant value proceed the more significant bit value 
+*#
+
+refering to the side note compiler and assemblers can hide any issues of endiannes:#ok Mr. TeaCup. Good work
+    This is basically so you dont have to write ASM and deak with big boy logic
+#this book is also gonna attmept to teach me how to make an VM so yea here we go
+#********** 	SIDE NOTE: 		**************
+
+Let me get this right. If I make a lil window(like in pygame) and allocate some memory to it(ima guesing storing Binary on a txt file and shipping it to the proccssor from your OS)
+
+			*#
+This book made a great point:
+    espically on this Level its nothing but you and the CPU
+    But keep in mind. The computer would do whatever you want. 
+    The computer isnt as smart as you think. Its nothing but you and you logic
+    Great Logic Makes Amazing Programs(or computers)
+
+
+
