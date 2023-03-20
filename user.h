@@ -3,6 +3,7 @@
 #define _USER_
 
 #include <iostream>
+#include <iomanip>  //i forgot this but ima need it. re-compile it on your own
 #include <string>
 using namespace std;
 
