@@ -41,4 +41,6 @@ void test_show_bytes(int val){
 
 }
 
+#endif //_BYTE_ORDER_
+
 
