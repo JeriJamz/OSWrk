@@ -41,6 +41,23 @@ void test_show_bytes(int val){
 
 }
 
+void inplace_swap(int *a, int *b){
+
+    *y = *x ^ *y;
+    *x = *x ^ *y;
+    *y = *x ^ *y; //this is alot mo simple LMAOOOO
+
+}
+
+void reverse_array(int c[], int cnt){
+
+    int first, last;
+    for(first = 0, last = cnt-1; first <= last;first++, last--){
+	 inplace_swap(&c[first], &c[last]);
+
+    }
+}
+
 #endif //_BYTE_ORDER_
 
 
