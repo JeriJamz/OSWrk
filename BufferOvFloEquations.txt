@@ -1,0 +1,2 @@
+0<2^w -x < 2^w #This is recursive
+(x + 2^w -x)mod 2^w = 2^w mod 2^w = 0 #this is a great way to check for buffOvFlo and then check if its true 
